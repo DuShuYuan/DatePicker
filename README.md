@@ -56,7 +56,24 @@ DatePicker 日期选择器；DoubleDatePicker 双日期选择；WheelView 滚轮
 
 ```
 layoutId 为自定义的布局文件id，其中必须包含以下View id：
+
 DatePicker：
-    tv_cancel;tv_select;wheel_year;wheel_month;wheel_day;wheel_hour;tv_hour;wheel_minute;tv_minute
+    tv_cancel;
+    tv_select;
+    wheel_year;
+    wheel_month;
+    wheel_day;
+    wheel_hour;
+    tv_hour;
+    wheel_minute;
+    tv_minute;
+    
 DoubleDatePicker：
-    tv_cancel;tv_select;wheel_year;wheel_month;wheel_day;wheel_year2;wheel_month2;wheel_day2;
+    tv_cancel;
+    tv_select;
+    wheel_year;
+    wheel_month;
+    wheel_day;
+    wheel_year2;
+    wheel_month2;
+    wheel_day2;
