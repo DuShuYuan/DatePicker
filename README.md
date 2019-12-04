@@ -1,12 +1,13 @@
-# DatePicker
-[![](https://jitpack.io/v/DuShuYuan/DatePicker.svg)](https://jitpack.io/#DuShuYuan/DatePicker)
+# DatePicker[![](https://jitpack.io/v/DuShuYuan/DatePicker.svg)](https://jitpack.io/#DuShuYuan/DatePicker)
+
+
 DatePicker 日期选择器；DoubleDatePicker 双日期选择；WheelView 滚轮选择器
 ------
 ## 截图
 ![gif](/img/simple.gif)
 
--------
 ## 使用
+-------
 
 Step 1. Add the JitPack repository to your build file
 
@@ -25,6 +26,7 @@ Step 2. Add the dependency
 	}
     
 ### WheelView
+-------
 ```xml
 
     <com.dsy.datepicker.WheelView
@@ -51,6 +53,7 @@ Step 2. Add the dependency
 ```
 
 ### DatePicker & DoubleDatePicker
+-------
 ```java
         DatePicker datePicker = new DatePicker(this, new DatePicker.ResultHandler() {
             @Override
@@ -65,6 +68,7 @@ Step 2. Add the dependency
         datePicker.show("2008-08-08 00:00");//显示定位时间 yyyy-MM-dd HH:mm
 ```
 ### 自定义日期选择器样式
+-------
 
 使用如下初始化方法，传入你的布局id
 ```java
