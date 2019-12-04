@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#fff"
+    android:padding="20dp">
+
+
+    <com.dsy.datepicker.WheelView
+        android:id="@+id/wheel"
+        android:layout_width="160dp"
+        android:layout_height="160dp" />
+
+</LinearLayout>
