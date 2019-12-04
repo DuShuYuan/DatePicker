@@ -37,7 +37,7 @@ Step 2. Add the dependency
         android:layout_height="160dp" />
 
 ```
-```java
+```
         WheelView wheelView=findViewById(R.id.wheel);
         //设置数据
         wheelView.setData(data);
@@ -58,7 +58,7 @@ Step 2. Add the dependency
 
 ### DatePicker & DoubleDatePicker
 ---
-```java
+```
         DatePicker datePicker = new DatePicker(this, new DatePicker.ResultHandler() {
             @Override
             public void handle(String time) {
@@ -78,7 +78,7 @@ Step 2. Add the dependency
 ---
 
 使用如下初始化方法，传入你的布局id
-```java
+```
         public DatePicker(Context context,@LayoutRes int layoutId, ResultHandler resultHandler)
         public DoubleDatePicker(Context context, @LayoutRes int layoutId, ResultHandler resultHandler)
 
@@ -86,7 +86,7 @@ Step 2. Add the dependency
 layoutId 为自定义的布局文件id，其中必须包含以下View id：
 
 DatePicker：
-```java
+```
     tv_cancel;
     tv_select;
     wheel_year;
@@ -98,7 +98,7 @@ DatePicker：
     tv_minute;
 ```
 DoubleDatePicker：
-```java
+```
     tv_cancel;
     tv_select;
     wheel_year;
