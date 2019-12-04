@@ -24,13 +24,15 @@ public class WheelDialog extends Dialog {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dialog_wheel);
-        WheelView wheelView=findViewById(R.id.wheel);
         List<String> data=new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             data.add(i+"");
         }
+        WheelView wheelView=findViewById(R.id.wheel);
         //设置数据
         wheelView.setData(data);
+        //设置选中项
+        wheelView.setSelected(4);
         //设置是否循环
         wheelView.setIsLoop(false);
         //选中监听
