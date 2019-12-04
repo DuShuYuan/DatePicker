@@ -1,4 +1,5 @@
 # DatePicker
+[![](https://jitpack.io/v/DuShuYuan/DatePicker.svg)](https://jitpack.io/#DuShuYuan/DatePicker)
 DatePicker 日期选择器；DoubleDatePicker 双日期选择；WheelView 滚轮选择器
 ------
 ## 截图
@@ -7,7 +8,23 @@ DatePicker 日期选择器；DoubleDatePicker 双日期选择；WheelView 滚轮
 -------
 ## 使用
 
-## WheelView
+Step 1. Add the JitPack repository to your build file
+
+Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+Step 2. Add the dependency
+
+	dependencies {
+	        implementation 'com.github.DuShuYuan:DatePicker:1.0.0'
+	}
+    
+### WheelView
 ```xml
 
     <com.dsy.datepicker.WheelView
@@ -33,7 +50,7 @@ DatePicker 日期选择器；DoubleDatePicker 双日期选择；WheelView 滚轮
         });
 ```
 
-## DatePicker & DoubleDatePicker
+### DatePicker & DoubleDatePicker
 ```java
         DatePicker datePicker = new DatePicker(this, new DatePicker.ResultHandler() {
             @Override
@@ -47,7 +64,7 @@ DatePicker 日期选择器；DoubleDatePicker 双日期选择；WheelView 滚轮
         datePicker.show();//显示当前时间
         datePicker.show("2008-08-08 00:00");//显示定位时间 yyyy-MM-dd HH:mm
 ```
-## 自定义日期选择器样式
+### 自定义日期选择器样式
 
 使用如下初始化方法，传入你的布局id
 ```java
@@ -58,6 +75,7 @@ DatePicker 日期选择器；DoubleDatePicker 双日期选择；WheelView 滚轮
 layoutId 为自定义的布局文件id，其中必须包含以下View id：
 
 DatePicker：
+```java
     tv_cancel;
     tv_select;
     wheel_year;
@@ -67,8 +85,9 @@ DatePicker：
     tv_hour;
     wheel_minute;
     tv_minute;
-    
+```
 DoubleDatePicker：
+```java
     tv_cancel;
     tv_select;
     wheel_year;
@@ -77,3 +96,4 @@ DoubleDatePicker：
     wheel_year2;
     wheel_month2;
     wheel_day2;
+```
