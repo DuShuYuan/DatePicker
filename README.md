@@ -1,17 +1,13 @@
 # DatePicker  [![](https://jitpack.io/v/DuShuYuan/DatePicker.svg)](https://jitpack.io/#DuShuYuan/DatePicker)
 
-
-DatePicker 日期选择器；DoubleDatePicker 双日期选择；WheelView 滚轮选择器
+    DatePicker 日期选择器；DoubleDatePicker 双日期选择；WheelView 滚轮选择器
 ---
 ## 截图
 ![gif](/img/simple.gif)
 
 ## 使用
----
 
-Step 1. Add the JitPack repository to your build file
-
-Add it in your root build.gradle at the end of repositories:
+Step 1. 
 
 	allprojects {
 		repositories {
@@ -19,13 +15,12 @@ Add it in your root build.gradle at the end of repositories:
 			maven { url 'https://jitpack.io' }
 		}
 	}
-Step 2. Add the dependency
+Step 2. 
 
 	dependencies {
 	        implementation 'com.github.DuShuYuan:DatePicker:1.0.0'
 	}
     
-
 
 ### WheelView
 ---
@@ -83,7 +78,7 @@ Step 2. Add the dependency
         public DoubleDatePicker(Context context, @LayoutRes int layoutId, ResultHandler resultHandler)
 
 ```
-layoutId 为自定义的布局文件id，其中必须包含以下View id：
+layoutId 为自定义的布局文件id，其中**必须包含以下View id**：
 
 DatePicker：
 ```
